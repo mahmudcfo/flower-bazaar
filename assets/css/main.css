@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* linear-gradient(180deg, rgba(103, 171, 234, 0.24) 0%, rgba(233, 90, 8, 0.60) 100%) */
+
 body {
   background: #f5f8ff;
   font-family: "Inter", sans-serif;
@@ -102,6 +104,15 @@ header {
 .pb-13 {
   padding-bottom: 13rem;
 }
+
+.pb-8 {
+  padding-bottom: 8rem;
+}
+
+.text-3xl {
+  font-size: 3rem;
+}
+
 .flower-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -141,6 +152,42 @@ header {
 }
 .max-w-17 {
   max-width: 17rem;
+}
+
+/* Plants lover section styles */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  width: 18rem;
+  right: -6rem;
+  top: -8rem;
+}
+
+.plant-store-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.plant-store-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.plant-benefits {
+  opacity: 0.5;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.plant-benefits li {
+  margin-bottom: 1.25rem;
+}
+
+.pr-7 {
+  padding-right: 7rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -186,5 +233,22 @@ header {
   }
   .text-base {
     font-size: 1rem;
+  }
+  .plant-store-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .flower-store {
+    width: 100%;
+  }
+  .pr-0 {
+    padding-right: 0;
+    margin-bottom: 1rem !important;
+  }
+  .plant-benefits {
+    padding-left: 1rem;
+  }
+  .plant-benefits li {
+    margin-bottom: 1rem;
   }
 }
