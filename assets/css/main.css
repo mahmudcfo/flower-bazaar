@@ -190,6 +190,53 @@ header {
   padding-right: 7rem;
 }
 
+/* join section styles */
+.join-container {
+  background: rgba(7, 51, 79, 0.4);
+  background-image: url("../images/news-letter-bg.png");
+  background-size: cover;
+  height: 34rem;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-heading {
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form .email {
+  padding: 1rem 1.25rem;
+  width: 40rem;
+  outline: none;
+  border: none;
+}
+
+.email::placeholder {
+  font-size: 1rem;
+  opacity: 0.5;
+  color: #000;
+}
+
+.submit {
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #e95a08;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .none {
     display: none;
@@ -209,7 +256,8 @@ header {
   }
 
   .banner-heading,
-  .plant-content h1 {
+  .plant-content h1,
+  .newsletter-heading {
     font-size: 1.5rem;
   }
 
@@ -250,5 +298,15 @@ header {
   }
   .plant-benefits li {
     margin-bottom: 1rem;
+  }
+
+  .join-container {
+    height: 17rem;
+  }
+  .newsletter-form .email {
+    width: 13rem;
+  }
+  .submit {
+    padding: 1rem;
   }
 }
