@@ -432,4 +432,7 @@ header {
     flex-direction: column;
     gap: 1.5rem;
   }
+  footer {
+    margin-bottom: 2rem !important;
+  }
 }
