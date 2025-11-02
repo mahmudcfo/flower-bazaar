@@ -251,6 +251,27 @@ header {
   font-size: 1.25rem;
   margin-top: 1rem;
 }
+.footer-links {
+  display: flex;
+  gap: 7rem;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links ul li {
+  margin-bottom: 2rem;
+}
+.footer-links ul li:last-child {
+  margin-bottom: 0;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #6b7280;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
 .social-links a {
   margin-right: 1.5rem;
 }
@@ -298,7 +319,7 @@ header {
     max-height: 13rem;
   }
   .text-base {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .plant-store-container {
     flex-direction: column;
@@ -326,5 +347,11 @@ header {
   }
   .submit {
     padding: 1rem;
+  }
+
+  .footer-container,
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
